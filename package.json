@@ -1,5 +1,5 @@
 {
-  "name": "is-darkmode",
+  "name": "is-dark",
   "version": "1.0.0",
   "description": "Detect whether or not the system is in dark mode from the browser.",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/willhackett/is-darkmode.git"
+    "url": "git+https://github.com/willhackett/is-dark.git"
   },
   "keywords": [
     "darkmode",
@@ -17,9 +17,9 @@
   "author": "Will Hackett <npm@willhackett.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/willhackett/is-darkmode/issues"
+    "url": "https://github.com/willhackett/is-dark/issues"
   },
-  "homepage": "https://github.com/willhackett/is-darkmode#readme",
+  "homepage": "https://github.com/willhackett/is-dark#readme",
   "devDependencies": {
     "@types/node": "^12.0.2",
     "tslint-config-seek": "^1.2.0"

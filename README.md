@@ -10,11 +10,11 @@ The choice of whether to enable a light or dark appearance is an aesthetic one f
 Install the package using `npm` or `yarn`
 
 ```bash
-npm install -S is-darkmode
+npm install -S is-dark
 ```
 
 ```bash
-yarn add is-darkmode
+yarn add is-dark
 ```
 
 ## Usage
