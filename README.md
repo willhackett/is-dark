@@ -1,5 +1,7 @@
-# is-darkmode
+# is-dark
 Detect whether or not the system is in dark mode from the browser.
+
+![Come to the dark side!](https://i.imgur.com/ShUTLqk.gif)
 
 ## Rationale
 
