@@ -1,6 +1,6 @@
 {
   "name": "is-dark",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Detect whether or not the system is in dark mode from the browser.",
   "main": "dist/index.js",
   "scripts": {

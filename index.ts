@@ -3,14 +3,21 @@ type DarkModeStateType = 'dark' | 'light'
 type DarkModeSubscriberType = (mode: DarkModeStateType) => void
 
 class DarkModeHandler {
-  media: MediaQueryList = window.matchMedia('(prefers-color-scheme: dark)')
+  isNode: boolean = false;
+  media?: MediaQueryList
   state: DarkModeStateType = 'light'
   subscribers: DarkModeSubscriberType[] = []
   constructor() {
+    if (typeof window === 'undefined') {
+      this.isNode = true;
+      return;
+    }
+    this.media = window.matchMedia('(prefers-color-scheme: dark)')
     this.media.addListener(this.handleUiChange)
     this.handleUiChange(this.media)
   }
   public isDarkMode = () => {
+    if (this.isNode) return false;
     return this.state === 'dark'
   }
   public subscribeToColorScheme = (method: DarkModeSubscriberType) => {
